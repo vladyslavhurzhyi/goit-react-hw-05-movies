@@ -59,12 +59,20 @@ export const MovieDetails = () => {
           <p>Additional Information</p>
           <AdditionalList>
             <li>
-              <Link key={'cast'} to="cast">
+              <Link
+                key={'cast'}
+                to="cast"
+                state={{ from: location.state?.from ?? '/' }}
+              >
                 Cast
               </Link>
             </li>
             <li>
-              <Link key={'reviews'} to="reviews">
+              <Link
+                key={'reviews'}
+                to="reviews"
+                state={{ from: location.state?.from ?? '/' }}
+              >
                 Reviews
               </Link>
             </li>

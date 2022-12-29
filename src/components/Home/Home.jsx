@@ -1,7 +1,6 @@
 import { FilmList } from 'components/FilmList/FilmList';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import { getTrandingFilms } from '../../API/MoviesAPI';
 
 export const Home = () => {

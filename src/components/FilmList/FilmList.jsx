@@ -1,4 +1,4 @@
-import { List } from '../Home/Home.styled';
+import { List } from '../../pages/Home/Home.styled';
 import { Link, useLocation } from 'react-router-dom';
 
 export const FilmList = ({ data }) => {

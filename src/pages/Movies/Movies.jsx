@@ -4,7 +4,7 @@ import { getFilms } from 'API/MoviesAPI';
 import { InputStyled, SearchButton } from './Movies.styled';
 import { FilmList } from 'components/FilmList/FilmList';
 
-export const Movies = () => {
+const Movies = () => {
   const [filmsData, setFilmsData] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -48,3 +48,5 @@ export const Movies = () => {
     </>
   );
 };
+
+export default Movies;

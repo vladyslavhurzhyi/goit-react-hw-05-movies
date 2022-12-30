@@ -1,4 +1,5 @@
 import { getFilmsById } from 'API/MoviesAPI';
+import { Suspense } from 'react';
 import { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import {
@@ -77,7 +78,9 @@ export const MovieDetails = () => {
               </Link>
             </li>
           </AdditionalList>
-          <Outlet />
+          <Suspense>
+            <Outlet />
+          </Suspense>
         </>
       )}
     </>
